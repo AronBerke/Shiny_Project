@@ -43,7 +43,7 @@ function(input, output, session) {
       group_by(., symptom) %>% 
       summarize(count=n()) %>% 
       top_n(., n=input$symp_num, wt=count) %>% 
-      ggplot(., aes(x=symptom, y = count)) +
+      ggplot(., aes(x=reorder(symptom, -count), y = count)) +
       geom_col(aes(fill=symptom))+
       ylab('Reported Symptom Count')+
       xlab('Symptom') +
