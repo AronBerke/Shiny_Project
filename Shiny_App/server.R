@@ -64,14 +64,13 @@ function(input, output, session) {
   )
   
   output$table_ae <- DT::renderDataTable({
-    datatable(sev_cats(), rownames=FALSE) 
+    sev_cats()
   })
   
   output$table_ind <- DT::renderDataTable({
-    datatable(sev_cats() %>% 
+    sev_cats() %>% 
                 group_by(.,severity) %>% 
-                mutate(.,index = (count/first(count))*100), 
-              rownames=FALSE) 
+                mutate(.,index = (count/first(count))*100)
   })
   
   output$table_symp <- DT::renderDataTable({
