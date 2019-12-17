@@ -1,0 +1,12 @@
+name: Vaccine_App
+title: Vaccine_App
+username:
+account: aberke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1327971
+bundleId: 2500176
+url: https://aberke.shinyapps.io/Vaccine_App/
+when: 1571089158.30357
+asMultiple: FALSE
+asStatic: FALSE
