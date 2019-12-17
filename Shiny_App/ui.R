@@ -2,7 +2,7 @@
 shinyUI(dashboardPage(
   dashboardHeader(title = 'Vaccine AE Trends'),
   dashboardSidebar(
-    sidebarUserPanel("Aron Berke", image = "./Aron_old_headshot.jpeg"),
+    sidebarUserPanel("Aron Berke", image = "./AronBerke2.jpg"),
     sidebarMenu(
       menuItem("Introduction", tabName = 'intro', icon = icon("info-circle")),
       menuItem("Adverse Events", tabName = "adverse_events", icon = icon("hospital")),
